@@ -13,7 +13,11 @@ class Url():
          user=browser.find_element(by=By.NAME, value="password")
          user.send_keys("facegenie")
          browser.implicitly_wait(60)
-
+         browser.find_element(by=By.LINK_TEXT,value="logout?").click()
+         
+         
+name=Url()
+name.testimple()     
 
 
 
